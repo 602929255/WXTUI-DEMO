@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/countDown/countDown",
     "pages/table/table",
     "pages/indexed/indexed",
     "pages/accordion/accordion",
