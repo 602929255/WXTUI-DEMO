@@ -1,4 +1,12 @@
+[Rattenking 博客](http://rattenking.gitee.io/stone/index.html)
+[Rattenking CSDN博客](https://blog.csdn.net/m0_38082783)
+
 ## h5puzzle.js的说明
+### 拖拽拼图游戏详解
+[微信小程序----拼图游戏流程设计](http://rattenking.gitee.io/stone/2018/04/12/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F%E6%B5%81%E7%A8%8B%E8%AE%BE%E8%AE%A1/)
+[微信小程序—-拖拽拼图游戏之图片分块和打乱顺序](http://rattenking.gitee.io/stone/2018/04/12/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E2%80%94-%E6%8B%96%E6%8B%BD%E6%8B%BC%E5%9B%BE%E6%B8%B8%E6%88%8F%E4%B9%8B%E5%9B%BE%E7%89%87%E5%88%86%E5%9D%97%E5%92%8C%E6%89%93%E4%B9%B1%E9%A1%BA%E5%BA%8F/)
+[微信小程序----拖拽拼图之拖拽和切换](http://rattenking.gitee.io/stone/2018/04/12/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E6%8B%96%E6%8B%BD%E6%8B%BC%E5%9B%BE%E4%B9%8B%E6%8B%96%E6%8B%BD%E5%92%8C%E5%88%87%E6%8D%A2/)
+### 使用步骤
 #### 1. 在当前页面对h5puzzle.js的引入
 ```
 const Puzzle = require("./h5puzzle.js");
