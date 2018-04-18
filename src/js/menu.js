@@ -1,5 +1,9 @@
 var homeMenu = [
   {
+    'title': 'audio (音乐播放)',
+    'url': '../../pages/audio/audio'
+  },
+  {
     'title': 'countDown (团购或者秒杀的批量倒计时)',
     'url': '../../pages/countDown/countDown'
   },

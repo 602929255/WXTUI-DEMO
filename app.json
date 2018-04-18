@@ -33,7 +33,8 @@
     "pages/map/map",
     "pages/loading/loading",
     "pages/luckdraw/luckdraw",
-    "pages/puzzle/puzzle"
+    "pages/puzzle/puzzle",
+    "pages/audio/audio"
   ],
   "window": {
     "navigationBarTitleText": "Rattenking 博客"
