@@ -1,3 +1,4 @@
+## 博客
 1. 码云博客：[Rattenking 博客](http://rattenking.gitee.io/stone/index.html)
 2. CSDN博客：[Rattenking的博客](https://blog.csdn.net/m0_38082783)
 
@@ -57,6 +58,9 @@ Page({
 > type: 拼图的矩阵数
 
 ## luck.js的说明
+### 刮刮乐详解
+1. [微信小程序----canvas实现刮刮乐效果](https://blog.csdn.net/m0_38082783/article/details/79458895)
+### 使用步骤
 #### 1. 在当前页面对luck.js的引入
 ```
 const Luck = require("./luck.js");
@@ -91,11 +95,17 @@ Page({
 >6. scale: 刮去部分占整体的百分比，大于就去掉涂层
 
 ## h5lock.js的说明
+### 手势锁详解
+1. [微信小程序（游戏）—-五子棋（棋盘，重置，对弈篇）](https://blog.csdn.net/m0_38082783/article/details/79035553)
+2. [微信小程序（游戏）—-五子棋（悔棋篇）](https://blog.csdn.net/m0_38082783/article/details/79045637)
+3. [微信小程序（游戏）—-五子棋（AI篇）](https://blog.csdn.net/m0_38082783/article/details/79076928)
+4. [微信小程序（游戏）—-五子棋（总结）](https://blog.csdn.net/m0_38082783/article/details/79087975)
+### 使用步骤
 #### 1. 在当前页面对h5lock.js的引入
 ```
 const Locker = require("./h5lock.js");
 ```
-#### 2. Luck的使用
+#### 2. Locker的使用
 
 ```
 Page({
