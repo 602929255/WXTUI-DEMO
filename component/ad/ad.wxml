@@ -1,0 +1,13 @@
+<!--component/ad/ad.wxml-->
+<view wx:if="{{type == 'home'}}" class='rui-class'>
+  {{type}}
+  <ad binderror="aderror" bindload="adload" unit-id="adunit-f74ba8bc1dad8fc3"></ad>
+</view>
+<view wx:if="{{type == 'page'}}" class='rui-class'>
+  {{type}}
+  <ad binderror="aderror" bindload="adload" unit-id="adunit-08660ffa2edc1a12"></ad>
+</view>
+<view wx:if="{{type == 'com'}}" class='rui-class'>
+  {{type}}
+  <ad binderror="aderror" bindload="adload" unit-id="adunit-f878b2bc76e89f55"></ad>
+</view>

@@ -32,7 +32,7 @@ Page({
             longitude: res.longitude,
             latitude: res.latitude,
             title: res.address,
-            iconPath: '../../src/images/navi_s.png',
+            iconPath: 'https://rattenking.gitee.io/stone/images/wx/images/navi_s.png',
             width: 32,
             height: 32
           }]
@@ -50,7 +50,7 @@ Page({
           longitude: res.longitude,
           latitude: res.latitude,
           title: res.address,
-          iconPath: '../../src/images/navi_e.png',
+          iconPath: 'https://rattenking.gitee.io/stone/images/wx/images/navi_e.png',
           width: 32,
           height: 32
         });

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "rui-toast": "../../../component/toast/toast"
+  }
+}

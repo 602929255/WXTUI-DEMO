@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "rui-panel": "../../../component/panel/panel",
+    "rui-swiper": "../../../component/swiper/swiper"
+  }
+}

@@ -11,7 +11,7 @@
 <!--右侧有箭头  -->
 <template name="list">
   <view class="tui-menu-list tui-youjiantou">
-    <navigator url="{{item.url}}">
+    <navigator url="{{item.url}}" hover-class='rui-active'>
       <block>
         <text>{{item.title}}</text>
       </block>

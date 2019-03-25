@@ -5,7 +5,7 @@
   display: table;
   width: 100%;
   table-layout: fixed;
-  background-color: rgba(138, 43, 226,0);
+  background-color: rgba(46,211,158,0);
   position: fixed;
   top: 0;
   left: 0;
@@ -16,14 +16,15 @@
   display: table-cell;
   text-align: center;
   width: 100%;
-  color: #fff;
+  color: #666;
 }
 .goods-list{
   height: 500rpx;
-  background-color: green;
+  background-color: #fefefe;
   padding: 20rpx;
-  color:#fff;
+  color:#777;
 }
-.list2{background-color: blue;}
-.list3{background-color: yellow;}
-.list4{background-color: red;}
+@import '../module/sticky/sticky.wxss';
+.rui-sticky-header{
+  position: relative!important;
+}

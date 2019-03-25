@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "rui-picker": "../../../component/picker/picker",
+    "rui-panel": "../../../component/panel/panel",
+    "rui-flex": "../../../component/flex/flex"
+  }
+}

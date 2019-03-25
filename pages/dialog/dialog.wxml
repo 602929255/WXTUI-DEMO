@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/dialog/dialog.wxml-->
 <view class="tui-content">
   <view class="tui-show-name">
@@ -20,5 +23,9 @@
   </view>
   <view class="tui-show-name">
     <text>{{msg}}</text>
+  </view>
+  <!-- 子页面广告位 -->
+  <view style="margin:4vw 0 150px;">
+    <include src="../../template/pagead.wxml"/>
   </view>
 </view>

@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/checkbox/checkbox.wxml-->
 <view class="tui-content">
   <checkbox-group bindchange="checkboxChange">
@@ -7,5 +10,9 @@
   </checkbox-group>
   <view class="tui-show-name">
     <text wx:for="{{checkArr}}" wx:key="checkbox-name"> {{item}} </text>
+  </view>
+  <!-- 子页面广告位 -->
+  <view style="margin:4vw 0 150px;">
+    <include src="../../template/pagead.wxml"/>
   </view>
 </view>

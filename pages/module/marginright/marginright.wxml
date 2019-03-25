@@ -1,0 +1,17 @@
+<rui-panel title="后边距滑动"></rui-panel>
+<rui-swiper 
+  swiperList="{{bannerList}}" 
+  indicatorDots="true" 
+  autoplay="true" 
+  imgwidth="90vw" 
+  circular="true" 
+  rui-class="rui-banner-img" 
+  next-margin="30px"
+  indicatorActiveColor="#2ed39e"
+></rui-swiper>
+
+<view style="margin-top:4vw;">
+  <include src="../../../template/comad.wxml"/>
+</view>
+
+<include src="../../../template/comgohome.wxml"/>

@@ -1,0 +1,47 @@
+/* component/index-list/index-list.wxss */
+.rui-index-list-content{
+  display: -webkit-flex;
+  display: flex;
+}
+.rui-navbar-content{
+  height: 100vh;
+  width: calc(100vh / 26);
+  flex: 0 0 auto;
+  order: 1;
+}
+.rui-list-content{
+  height: 100vh;
+  flex-grow: 1;
+}
+.rui-navbar-item{
+  font-size: 3vw;
+  width: calc(100vh / 26);
+  height: calc(100vh / 26);
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+
+.rui-panel-content{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  font-size: 4vw;
+  padding: 3vw;
+  background-color: #eee;
+}
+.rui-panel-title{
+  flex-grow: 1;
+  color: #222;
+}
+.rui-list-li{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  padding:4vw 3vw;
+  font-size: 4vw;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}

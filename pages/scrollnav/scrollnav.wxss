@@ -6,22 +6,23 @@
   left: 0;
 }
 .tui-city-scroll{
-  height: 80rpx;
-  line-height: 80rpx;
+  height: 50px;
+  line-height: 50px;
   width: 100%;
   white-space: nowrap;
 }
 .tui-nav-li{
-  font-size: 30rpx;
-  padding: 0 8rpx;
+  font-size: 15px;
+  margin: 0 8px;
+  flex: 0 0 auto;
 }
-.tui-nav-li:first-child{padding-left: 16rpx;}
-.tui-nav-li:last-child{padding-right: 16rpx;}
-.tui-nav-active{color: red;}
+.tui-nav-li:first-child{margin-left: 16rpx;}
+.tui-nav-li:last-child{margin-right: 16rpx;}
+.tui-nav-active{color: #2ed39e;border-bottom: 2px solid #2ed39e;}
 
 .tui-fixed-y{
   width: 100%;
-  height: calc(100% - 80rpx);
+  height: calc(100% - 50px);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -36,12 +37,29 @@
   line-height: 50px;
   text-align: center;
   font-size: 30rpx;
-  color: blue;
+  color: #fff;
+  border: none;
+  background: #2ed39e;
 }
 .tui-list-li{
-  height: 400px;
-  padding: 10rpx;
-  color: #fff;
-  font-size: 50rpx;
-  background-color: lightgreen;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 4vw;
+}
+.rui-goods-li{
+  width: 48%;
+  height: 50vw;
+  box-sizing: border-box;
+  border: 1px solid #2ed39e;
+  font-size: 4vw;
+  color: #2ed39e;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4vw;
 }

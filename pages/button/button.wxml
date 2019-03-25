@@ -1,3 +1,6 @@
+<!-- <import src="../../template/goHome.wxml"/>
+<template is="HOME"></template> -->
+
 <!--pages/button/button.wxml-->
 <view class="tui-btn-group">
   <view class="tui-btn-content">
@@ -18,4 +21,8 @@
   <view class="tui-btn-content">
     <button bindtap="setLoading" loading="{{loading}}" type="warn">点击设置按钮loading属性</button>
   </view>
+</view>
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0 150px;">
+  <include src="../../template/pagead.wxml"/>
 </view>

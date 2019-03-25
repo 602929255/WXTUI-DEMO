@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <view class="tui-loading-row">
   <view class="tui-loading-cell">
     <view class="circle-line">
@@ -100,4 +103,8 @@
     <view class="loading-spinner" style="background: url('../../src/images/load.png') no-repeat center top;">
     </view>
   </view>
+</view>
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0 150px;">
+  <include src="../../template/pagead.wxml"/>
 </view>

@@ -1,0 +1,26 @@
+<!--pages/module/sticky/sticky.wxml-->
+<rui-sticky>
+  <view slot="stickychild">
+    <rui-swiper 
+      swiperList="{{bannerList}}" 
+      indicatorDots="true" 
+      autoplay="true"
+      circular="true"
+      indicatorActiveColor="#2ed39e"
+    ></rui-swiper>
+    <view wx:for="{{list}}" wx:key="list">
+      <view class='rui-sticky-header' id="{{item.id}}">{{item.title}}</view>
+      <view wx:if="{{index == 0}}" style="margin-top:4vw;">
+        <include src="../../../template/comad.wxml"/>
+      </view>
+      <rui-flex rui-class="rui-flex-section">
+        <view class='rui-flex-li' slot="flexchild" wx:for="{{item.list}}" wx:for-item="listItme" wx:key="listchild">
+          <image src="{{listItme.imgUrl}}"></image>
+          <view>{{listItme.title}}</view>
+        </view>
+      </rui-flex>
+    </view>
+    
+    <include src="../../../template/comgohome.wxml"/>
+  </view>
+</rui-sticky>

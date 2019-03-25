@@ -1,17 +1,27 @@
 /* pages/number/number.wxss */
 .tui-number-group{
-  display: table;
-  table-layout: fixed;
-  width: 300rpx;
+  display: -webkit-flex;
+  display: flex;
+  width: calc(150rpx + 1px);
   text-align: center;
-  border-radius: 6px;
+  border-radius: 3px;
   border: 1px solid #bbb;
   overflow: hidden;
 }
 .tui-number-cell{
-  display: table-cell;
-  line-height: 1.7;
-  border-radius: 0;
+  width: 50rpx;
+  height: 50rpx;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{margin: 0;padding: 0;border: none;outline: medium;min-height: 0!important;}
+.tui-number-cell:first-child{
+  border-right: 1px solid #bbb;
+}
+.tui-number-cell:last-child{
+  border-left: 1px solid #bbb;
 }
 button::after{
   border-bottom: none;

@@ -1,15 +1,22 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/list/list.wxml-->
 <import src="../../template/list.wxml"/>
 
 <view class="tui-list-box">
   <view class="tui-list-head">右侧无箭头</view>
-  <template wx:for="{{menu}}" is="listNone" data="{{item}}"></template>
+  <template wx:for="{{menu}}" wx:key="navList3" is="listNone" data="{{item}}"></template>
+</view>
+<!-- 子页面广告位 -->
+<view style="margin:0;">
+  <include src="../../template/pagead.wxml"/>
 </view>
 <view class="tui-list-box">
   <view class="tui-list-head">右侧有箭头</view>
-  <template wx:for="{{menu}}" is="list" data="{{item}}"></template>
+  <template wx:for="{{menu}}" wx:key="navList2" is="list" data="{{item}}"></template>
 </view>
 <view class="tui-list-box-raduis">
   <view class="tui-list-head">圆角列表</view>
-  <template wx:for="{{menu}}" is="list" data="{{item}}"></template>
+  <template wx:for="{{menu}}" wx:key="navList1" is="list" data="{{item}}"></template>
 </view>

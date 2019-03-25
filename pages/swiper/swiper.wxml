@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/swiper/swiper.wxml-->
 <view class="tui-content tui-clear">
   控制轮播开关：<switch class="tui-fr" checked='{{autoplay}}' bindchange='autoplaySwiper'></switch>
@@ -6,7 +9,7 @@
   <swiper class="tui-swiper" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
             autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
             indicator-color="#777" indicator-active-color="yellow">
-    <block wx:for-items="{{banner_url}}">
+    <block wx:for-items="{{banner_url}}" wx:key="banner_url">
       <swiper-item>
         <block wx:if="{{item}}">
           <image class="tui-img" src="{{item}}"  mode="aspectFill"/>
@@ -17,4 +20,8 @@
       </swiper-item>
     </block>
   </swiper>
+</view>
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0 150px;">
+  <include src="../../template/pagead.wxml"/>
 </view>

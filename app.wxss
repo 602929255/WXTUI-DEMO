@@ -60,6 +60,17 @@
   height: 100%;
   padding: 10px;
 }
+.rui-flex-content{
+  width: 100%;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  font-size: 6vw;
+}
+.rui-active{
+  color: #2ed39e;
+}
 .tui-fixed-foot{
   width: 100%;
   height: 80rpx;
@@ -113,7 +124,7 @@
 /*文字列表样式  */
 
 .tui-menu-list{
-  line-height: 80rpx;
+  line-height: 100rpx;
   color: #555;
   font-size: 35rpx;
   padding: 0 0rpx 0 10px;
@@ -248,3 +259,16 @@
 .tui-card-head{border-bottom: 1px solid #c8c7cc;}
 .tui-card-foot{color:#777;border-top:1px solid #c8c7cc;}
 .tui-card-btn{color: #007aff;}
+.rui-go-home{
+  color: #2ed39e;
+  font-size: 4vw;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right:30px;
+  z-index: 1000;
+}
+.rui-go-home image{
+  width: 15.7vw;
+  height: 12.8vw;
+}

@@ -39,7 +39,8 @@
 }
 
 .page-group{
-  display: table;
+  display: -webkit-flex;
+  display: flex;
   width: 100%;
   table-layout: fixed;
   background-color: #fff;
@@ -52,7 +53,7 @@
   width: 100%;
   color: #222;
 }
-.page-nav-list.active{color:blue;}
+.page-nav-list.active{color:#2ed39e;}
 .tui-warn{
   height: 50px;
   line-height: 50px;

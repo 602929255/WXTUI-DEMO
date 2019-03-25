@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/lock/lock.wxml-->
 <view class="container">
     <view class="reset" bindtap="resetPwd">重置密码</view>

@@ -1,0 +1,24 @@
+/* pages/comswiper/comswiper.wxss */
+.rui-banner-img{
+  width: 100vw;
+  height: 42.6667vw;
+  border: 1px solid #2ed39e;
+  box-sizing: border-box;
+  opacity: 0.3;
+}
+.rui-panel-bg{
+  background-color: #fff;
+}
+.rui-swiper-page-num{
+  font-size: 4vw;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 6vw;
+  line-height: 6vw;
+  border-radius: 3vw;
+  padding: 0 2vw;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  z-index: 10;
+}

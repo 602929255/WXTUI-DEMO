@@ -1,0 +1,6 @@
+<!--component/toast/toast.wxml-->
+<view class='rui-toast {{type === "default" ? "" : "rui-toast-circle"}}' wx:if="{{ visible && mask && type !== 'innerhtml'}}" bindtap="handleHide">{{content}}</view>
+
+<view class='rui-toast-innerhtml' wx:if="{{type === 'innerhtml'}}">
+  <slot name="toastchild"></slot>
+</view>

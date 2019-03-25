@@ -1,0 +1,41 @@
+/* component/swiper.wxss */
+.rui-swiper-content{
+  width: 100vw;
+  height: 42.6667vw;
+  position: relative;
+  /* overflow: hidden; */
+}
+.rui-swiper-box,.rui-swiper-img{
+  width: 100vw;
+  height: 42.6667vw;
+  display: block;
+  margin: 0 auto;
+}
+.rui-swiper-box{position: relative;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rui-swiper-text{
+  font-size: 4vw;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rui-swiper-text.rui-active{
+  box-sizing: border-box;
+  color:#2ed39e;
+  border-bottom: 3px solid #2ed39e; 
+}

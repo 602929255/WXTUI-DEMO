@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "rui-ad": "../../component/ad/ad"
+  }
+}

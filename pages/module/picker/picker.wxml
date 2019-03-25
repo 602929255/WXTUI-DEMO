@@ -1,0 +1,52 @@
+<rui-panel title="时间粒度为：second(时段选择)"></rui-panel>
+<rui-flex rui-class="rui-flex">
+  <text slot="flexchild">开始时间：</text>
+  <rui-picker slot="flexchild" start="2018-03-15 10:45:00" end="2050-03-15 10:45:00" value="{{value}}" fields="second" bindchangedatepicker="changeDate0"></rui-picker>
+</rui-flex>
+<rui-flex rui-class="rui-flex">
+  <text slot="flexchild">结束时间：</text>
+  <rui-picker slot="flexchild" start="2000-03-15 10:45:00" end="2050-03-15 10:45:00" value="{{value1}}" fields="second" bindchangedatepicker="changeDate1"></rui-picker>
+</rui-flex>
+
+<rui-panel title="时间粒度为：second"></rui-panel>
+<rui-flex rui-class="rui-flex">
+  <text slot="flexchild">选择时间：</text>
+  <rui-picker slot="flexchild" start="2000-01-01 00:00:00" end="2050-12-31 23:59:59" value="{{secondvalue}}" fields="second" bindchangedatepicker="changeSecond"></rui-picker>
+</rui-flex>
+
+<rui-panel title="时间粒度为：minute"></rui-panel>
+<rui-flex rui-class="rui-flex">
+  <text slot="flexchild">选择时间：</text>
+  <rui-picker slot="flexchild" start="2000-01-01 00:00" end="2050-12-31 23:59" value="{{minutevalue}}" fields="minute" bindchangedatepicker="changeMinute"></rui-picker>
+</rui-flex>
+
+<rui-panel title="时间粒度为：year"></rui-panel>
+<rui-flex rui-class="rui-flex">
+  <text slot="flexchild">选择时间：</text>
+  <rui-picker slot="flexchild" start="2000" end="2050" value="{{yearvalue}}" fields="year" bindchangedatepicker="changeYear"></rui-picker>
+</rui-flex>
+
+<rui-panel title="时间粒度为：month"></rui-panel>
+<rui-flex rui-class="rui-flex">
+  <text slot="flexchild">选择时间：</text>
+  <rui-picker slot="flexchild" start="2000-01" end="2050-12" value="{{monthvalue}}" fields="month" bindchangedatepicker="changeMonth"></rui-picker>
+</rui-flex>
+
+<rui-panel title="时间粒度为：day"></rui-panel>
+<rui-flex rui-class="rui-flex">
+  <text slot="flexchild">选择时间：</text>
+  <rui-picker slot="flexchild" start="2000-01-01" end="2050-12-31" value="{{dayvalue}}" fields="day" bindchangedatepicker="changeDay"></rui-picker>
+</rui-flex>
+
+<rui-panel title="时间粒度为：hour"></rui-panel>
+<rui-flex rui-class="rui-flex">
+  <text slot="flexchild">选择时间：</text>
+  <rui-picker slot="flexchild" start="2000-01-01 00" end="2050-12-31 23" value="{{hourvalue}}" fields="hour" bindchangedatepicker="changeHour"></rui-picker>
+</rui-flex>
+
+<view style="margin:4vw 0 150px;">
+  <include src="../../../template/comad.wxml"/>
+</view>
+
+<!-- <include src="../../../template/comgohome.wxml"/> -->
+

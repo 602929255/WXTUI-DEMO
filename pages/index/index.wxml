@@ -1,6 +1,32 @@
 <!--pages/index/index.wxml-->
 <import src="../../template/list.wxml"/>
+<!-- <rui-ad type="com"></rui-ad> -->
+<scroll-view class="tui-content" scroll-y="true" scroll-top="{{openScroll}}" style='height:100vh;padding:0;box-sizing:border-box;'>
+  <!-- logo和名字 -->
+  <image class='rui-logo' style='width:70px;height:70px;border-radius:50%;margin:50px auto 20px;display:block;' src="{{logo}}"></image>
+  <view style='text-align:center;padding-bottom:20px;'>WX-RUI</view>
+  <!-- 组件盒子 -->
+  <view class='rui-list-content'>
+    <!-- 导航 -->
+    <view class='rui-flex-content'>
+      <view class='rui-home-nav {{current == 0 ? "rui-active" : ""}}' bindtap='getCurrentModule' data-status="0"><text>基础组件</text></view>
+      <view class='rui-home-nav {{current == 1 ? "rui-active" : ""}}' bindtap='getCurrentModule' data-status="1"><text>扩展组件</text></view>
+    </view>
+    <!-- 组件列表 -->
+    <view wx:for="{{current == 0 ? menu : extendMenu}}" wx:key="menu" wx:for-item="list">
+      <view class='rui-list-section'>
+        <view class='rui-list-head'>{{list.code}}</view>
+        <template wx:for="{{list.list}}" wx:key="list" is="list" data="{{item}}"></template>
+      </view>
+    </view>
+  </view>
+  <!-- 广告位 -->
+  <view style='padding-bottom:150px;background:#eee;'>
+    <include src="../../template/homead.wxml"/>
+  </view>
+</scroll-view>
 
-<view class="tui-content" style='padding-right:0;'>
-  <template wx:for="{{menu}}" wx:key="menu" is="list" data="{{item}}"></template>
-</view>
+<!-- 回到首页 -->
+<!-- <import src="../../template/goHome.wxml"/>
+<template is="HOME"></template> -->
+<!-- <include src="../../template/goHome.wxml"/> -->

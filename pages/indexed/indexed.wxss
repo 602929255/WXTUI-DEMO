@@ -11,7 +11,7 @@
   z-index: 10;
 }
 .right-nav{
-  width: 30px;
+  width: 20px;
   color: #888;
   text-align: center;
   position: fixed;

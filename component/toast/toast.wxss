@@ -1,0 +1,43 @@
+/* component/toast/toast.wxss */
+.rui-toast{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%,-50%);
+  min-width: 20vw;
+  max-width: 80vw;
+  line-height: 1.2;
+  padding: 2vw;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 4vw;
+  text-align: center;
+}
+.rui-toast-circle{
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  font-size: 8vw;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rui-toast-innerhtml{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.6);
+}
+.rui-toast-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

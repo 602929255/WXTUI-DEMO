@@ -1,6 +1,10 @@
 {
   "pages": [
+    "pages/module/toast/taost",
+    "pages/module/picker/picker",
     "pages/index/index",
+    "pages/module/navsticky/navsticky",
+    "pages/module/comswiper/comswiper",
     "pages/countDown/countDown",
     "pages/table/table",
     "pages/indexed/indexed",
@@ -34,9 +38,21 @@
     "pages/loading/loading",
     "pages/luckdraw/luckdraw",
     "pages/puzzle/puzzle",
-    "pages/audio/audio"
+    "pages/module/swiperlist/swiperlist",
+    "pages/module/transverse/transverse",
+    "pages/module/transverseloop/transverseloop",
+    "pages/module/portrait/portrait",
+    "pages/module/portraitloop/portraitloop",
+    "pages/module/marginright/marginright",
+    "pages/module/sticky/sticky"
   ],
   "window": {
+    "navigationBarBackgroundColor": "#2ed39e",
     "navigationBarTitleText": "Rattenking 博客"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于展示您的当前定位"
+    }
   }
 }

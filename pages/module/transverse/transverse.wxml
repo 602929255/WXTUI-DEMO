@@ -1,0 +1,13 @@
+<rui-panel title="横向滑动轮播"></rui-panel>
+<rui-swiper 
+  swiperList="{{bannerList}}" 
+  indicatorDots="true" 
+  autoplay="true"
+  indicatorActiveColor="#2ed39e"
+></rui-swiper>
+
+<view style="margin-top:4vw;">
+  <include src="../../../template/comad.wxml"/>
+</view>
+
+<include src="../../../template/comgohome.wxml"/>

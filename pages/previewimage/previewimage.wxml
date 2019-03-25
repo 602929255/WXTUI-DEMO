@@ -1,7 +1,16 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/previewimage/previewimage.wxml-->
 <view>
-  <button bindtap="previewImage" type="primary">图片上传预览</button>
+  <view style='padding:4vw;'>
+    <button bindtap="previewImage" type="primary">图片上传预览</button>
+  </view>
   <view class="tui-content"> 
-    <image class="tui-preview-img" wx:for="{{previewImageArr}}" bindtap="changePreview" data-src="{{item}}" src="{{item}}"></image>
+    <image class="tui-preview-img" wx:key="navList1" wx:for="{{previewImageArr}}" bindtap="changePreview" data-src="{{item}}" src="{{item}}"></image>
+  </view>
+  <!-- 子页面广告位 -->
+  <view style="margin:4vw 0 150px;">
+    <include src="../../template/pagead.wxml"/>
   </view>
 </view>

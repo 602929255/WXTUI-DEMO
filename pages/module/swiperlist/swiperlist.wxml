@@ -1,0 +1,18 @@
+<rui-panel title="衔接滑动轮播(当前/总页)"></rui-panel>
+<rui-swiper 
+  swiperList="{{bannerList}}"  
+  autoplay="true"
+  current='{{current}}' 
+  circular="true"
+  rui-class="rui-banner-img" 
+  indicatorActiveColor="#2ed39e"
+  bindswiperfinish='changeFun'
+>
+<view slot="pagenum" class='rui-swiper-page-num'>{{current + 1}}/{{bannerList.length}}</view>
+</rui-swiper>
+
+<view style="margin-top:4vw;">
+  <include src="../../../template/comad.wxml"/>
+</view>
+
+<include src="../../../template/comgohome.wxml"/>

@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
  <!--pages/switch/switch.wxml-->
 <view class="tui-list-box">
   <view class="tui-menu-list">
@@ -23,5 +26,9 @@
   <view class="tui-menu-list">
     <text>状态：{{isChecked6}}</text>
     <switch class="tui-fr" type="checkbox" checked="{{isChecked6}}" bindchange="changeSwitch6"/>
+  </view>
+  <!-- 子页面广告位 -->
+  <view style="margin:4vw 0 150px;">
+    <include src="../../template/pagead.wxml"/>
   </view>
 </view>

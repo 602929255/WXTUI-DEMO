@@ -1,5 +1,16 @@
 /* pages/gallerytable/gallerytable.wxss */
-.tui-row{padding: 5px;}
+.tui-row{
+  padding: 5px;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tui-col-2 {
+  width:50%;
+}
+
 .gallery-box{
   padding: 5px;
 }

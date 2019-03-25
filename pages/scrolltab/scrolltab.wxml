@@ -1,16 +1,21 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/scrolltab/scrolltab.wxml-->
-<!--导航滚动  -->
-<view class="tui-fixed-left">
+<view class='rui-flex-content'>
+  <!--导航滚动  -->
   <scroll-view class="tui-city-scroll" scroll-x="true">
-    <text bindtap="getStatus" id="NAV{{index}}" class="tui-nav-li {{index === status ? 'tui-nav-active' : ''}}" data-index="{{index}}" wx:for="{{navList}}">{{item}}</text>
+    <text bindtap="getStatus" id="NAV{{index}}" class="tui-nav-li {{index === status ? 'tui-nav-active' : ''}}" data-index="{{index}}" wx:for="{{navList}}" wx:key="navList2">{{item}}</text>
   </scroll-view>
-</view>
-<!--列表滚动区  -->
- <view class="tui-fixed-y">
+  <!--列表滚动区  -->
   <scroll-view class="tui-city-scroll-y" scroll-y="true" scroll-into-view="NAV{{status}}" scroll-with-animation="true">
-    <view wx:for="{{navList}}">
+    <view wx:for="{{navList}}" wx:key="navList1">
       <view id="NAV{{index}}" class="tui-list-head">{{item}}</view>
-      <view class="tui-list-li">{{item}} 列表 {{index}}</view>
+      <view class="tui-list-li">
+        <view class='rui-goods-li' wx:for="{{list}}" wx:key="list" wx:for-item="list">
+          {{item}} 类别 {{index + 1}}
+        </view>
+      </view>
     </view>
   </scroll-view>
-</view> 
+</view>

@@ -1,8 +1,11 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/gallerylist/gallerylist.wxml-->
 <view class="tui-list-box">
   <view class="tui-list-head">图在左边</view>
-  <view class="tui-gallery-list" wx:for="{{galleryList}}">
-    <image class="gallery-img tui-fl" src="{{item.image}}"></image>
+  <view class="tui-gallery-list" wx:for="{{galleryList}}" wx:key="navList1">
+    <image class="gallery-img" src="{{item.image}}"></image>
     <view class="gallery-box gallery-left">
       <text class="gallery-name">{{item.title}}</text>
       <text class="gallery-detail">{{item.detail}}</text>
@@ -11,18 +14,24 @@
 </view>
 <view class="tui-list-box">
   <view class="tui-list-head">图在右边</view>
-  <view class="tui-gallery-list" wx:for="{{galleryList}}">
-    <image class="gallery-img tui-fr" src="{{item.image}}"></image>
+  <view class="tui-gallery-list" wx:for="{{galleryList}}" wx:key="navList2">
+    <image class="gallery-img" style="order:2;" src="{{item.image}}"></image>
     <view class="gallery-box gallery-right">
       <text class="gallery-name">{{item.title}}</text>
       <text class="gallery-detail">{{item.detail}}</text>
     </view>
   </view>
 </view>
+
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0;">
+  <include src="../../template/pagead.wxml"/>
+</view>
+
 <view class="tui-list-box">
   <view class="tui-list-head">图在左边，右侧箭头</view>
-  <view class="tui-gallery-list tui-youjiantou" wx:for="{{galleryList}}">
-    <image class="gallery-img tui-fl" src="{{item.image}}"></image>
+  <view class="tui-gallery-list tui-youjiantou" wx:for="{{galleryList}}" wx:key="navList3">
+    <image class="gallery-img" src="{{item.image}}"></image>
     <view class="gallery-box gallery-left gallery-right">
       <text class="gallery-name">{{item.title}}</text>
       <text class="gallery-detail">{{item.detail}}</text>
@@ -31,8 +40,8 @@
 </view>
 <view class="tui-list-box-raduis">
   <view class="tui-list-head">圆角列表</view>
-  <view class="tui-gallery-list" wx:for="{{galleryList}}">
-    <image class="gallery-img tui-fr" src="{{item.image}}"></image>
+  <view class="tui-gallery-list" wx:for="{{galleryList}}" wx:key="navList4">
+    <image class="gallery-img" style="order:2;" src="{{item.image}}"></image>
     <view class="gallery-box gallery-right">
       <text class="gallery-name">{{item.title}}</text>
       <text class="gallery-detail">{{item.detail}}</text>

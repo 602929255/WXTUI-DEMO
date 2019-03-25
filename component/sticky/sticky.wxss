@@ -1,0 +1,4 @@
+/* component/sticky/sticky.wxss */
+.rui-sticky-content{
+  height: 100vh;
+}

@@ -1,7 +1,19 @@
-<view class='tui-countdown-content' wx:for="{{countDownList}}" wx:key="countDownList">
-  剩余
-  <text class='tui-conutdown-box'>{{item.day}}</text>天
-  <text class='tui-conutdown-box'>{{item.hou}}</text>时
-  <text class='tui-conutdown-box'>{{item.min}}</text>分
-  <text class='tui-conutdown-box tui-countdown-bg'>{{item.sec}}</text>秒
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
+<view wx:for="{{countDownList}}" wx:key="countDownList">
+  <!-- 子页面广告位 -->
+  <view style="margin:4vw 0;" wx:if="{{index == 4}}">
+    <include src="../../template/pagead.wxml"/>
+  </view>
+  <view class='tui-countdown-content'>
+    <view>
+      剩余
+      <text class='tui-conutdown-box'>{{item.day}}</text>天
+      <text class='tui-conutdown-box'>{{item.hou}}</text>时
+      <text class='tui-conutdown-box'>{{item.min}}</text>分
+      <text class='tui-conutdown-box tui-countdown-bg'>{{item.sec}}</text>秒
+    </view>
+  </view>
 </view>
+

@@ -1,0 +1,44 @@
+/* pages/module/sticky/sticky.wxss */
+.rui-swiper-section{
+  margin-bottom: 4vw;
+}
+.rui-flex-section{
+  padding-top: 4vw;
+}
+.rui-sticky-header{
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  background-color: #2ed39e;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+.rui-flex-li{
+  width: 45.5vw;
+  margin-left: 3vw;
+  text-align: center;
+  background-color: #2ed39e;
+  margin-bottom: 4vw;
+}
+.rui-flex-li image{
+  display: block;
+  width: 45.5vw;
+  height: 27.3vw;
+}
+.rui-flex-li view{
+  font-size: 4vw;
+  height: 12vw;
+  line-height: 12vw;
+  color: #fff;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical; 
+  -webkit-line-clamp:1;
+}

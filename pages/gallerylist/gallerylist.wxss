@@ -1,7 +1,14 @@
 /* pages/gallerylist/gallerylist.wxss */
+.tui-gallery-list{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .gallery-img{
   width: 150rpx;
   height: 90rpx;
+  flex: 0 0 auto;
 }
 .gallery-box{
   height: 90rpx;

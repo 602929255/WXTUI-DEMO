@@ -1,0 +1,32 @@
+<!--pages/comswiper/comswiper.wxml-->
+<rui-panel title="前后边距滑动轮播"></rui-panel>
+<rui-swiper  
+  swiperList="{{bannerList}}" 
+  indicatorDots="true" 
+  autoplay="true" 
+  current='{{current}}' 
+  isOpacity="true" 
+  isScale="true"  
+  imgwidth="82vw" 
+  circular="true" 
+  previous-margin="30px" 
+  next-margin="30px" 
+  rui-class="rui-banner-img" 
+  bindswiperfinish='changeFun'
+  indicatorActiveColor="#2ed39e"
+></rui-swiper>
+
+<view style="margin-top:4vw;">
+  <include src="../../../template/comad.wxml"/>
+</view>
+
+<include src="../../../template/comgohome.wxml"/>
+
+
+
+
+
+
+
+
+

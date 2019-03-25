@@ -1,16 +1,16 @@
 
 let goodsList = [
-  {actEndTime: '2018-05-01 10:00:43'},
-  {actEndTime: '2018-04-01 11:00:00'},
-  {actEndTime: '2018-06-01 12:45:56'},
-  {actEndTime: '2018-07-01 15:00:23'},
-  {actEndTime: '2018-05-23 17:00:22'},
-  {actEndTime: '2018-05-14 19:00:44'},
-  {actEndTime: '2018-05-21 21:00:34'},
-  {actEndTime: '2018-06-17 09:00:37'},
-  {actEndTime: '2018-03-21 05:00:59'},
-  {actEndTime: '2018-04-19 07:00:48'},
-  {actEndTime: '2018-04-28 03:00:11'}
+  {actEndTime: '2018/05/01 10:00:43'},
+  {actEndTime: '2018/04/01 11:00:00'},
+  {actEndTime: '2018/06/01 12:45:56'},
+  {actEndTime: '2018/07/01 15:00:23'},
+  {actEndTime: '2018/05/23 17:00:22'},
+  {actEndTime: '2018/05/14 19:00:44'},
+  {actEndTime: '2018/05/21 21:00:34'},
+  {actEndTime: '2018/06/17 09:00:37'},
+  {actEndTime: '2018/03/21 05:00:59'},
+  {actEndTime: '2018/04/19 07:00:48'},
+  {actEndTime: '2018/04/28 03:00:11'}
 ]
 Page({
   data: {
@@ -19,8 +19,13 @@ Page({
   },
   onLoad(){
     let endTimeList = [];
+    let curTime = new Date().getTime() + 1000 * 60 * 60 * 24;
     // 将活动的结束时间参数提成一个单独的数组，方便操作
-    goodsList.forEach(o => {endTimeList.push(o.actEndTime)})
+    goodsList.forEach(o => {
+      let arr = o.actEndTime.split(' ')[1].split(':');
+      let cur = (parseInt(arr[0]) * 3600 + parseInt(arr[1]) * 60 + parseInt(arr[2])) * 1000;
+      endTimeList.push(curTime + cur)
+    })
     this.setData({ actEndTimeList: endTimeList});
     // 执行倒计时函数
     this.countDown();

@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/slider/slider.wxml-->
 <view class="tui-content">
   <view class="tui-slider-head">设置step,当前设置步伐为5,当前值：{{slider1}}</view>
@@ -11,6 +14,11 @@
     <slider bindchange="changeSlider2" value="{{slider2}}" show-value/>
   </view>
 </view>
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0;">
+  <include src="../../template/pagead.wxml"/>
+</view>
+
 <view class="tui-content">
   <view class="tui-slider-head">设置最大值、最小值</view>
   <view class="tui-slider-box">

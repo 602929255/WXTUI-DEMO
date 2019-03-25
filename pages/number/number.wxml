@@ -1,19 +1,26 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/number/number.wxml-->
 <view class="tui-content">
   <view class="tui-gallery-list">默认</view>
   <view class="tui-gallery-list">
     <view class="tui-number-group">
-      <button class="tui-number-cell" bindtap="nextNum">-</button>
+      <view class="tui-number-cell" bindtap="nextNum">-</view>
       <input class="tui-number-cell" type="number" value='{{number}}'></input>
-      <button class="tui-number-cell" bindtap="prevNum">+</button>
+      <view class="tui-number-cell" bindtap="prevNum">+</view>
     </view>
   </view>
   <view class="tui-gallery-list">限定最小值0,最大值10</view>
   <view class="tui-gallery-list">
     <view class="tui-number-group">
-      <button class="tui-number-cell" bindtap="nextNum1" disabled='{{disabled1}}'>-</button>
+      <view class="tui-number-cell" bindtap="nextNum1" disabled='{{disabled1}}'>-</view>
       <input class="tui-number-cell" type="number" value='{{number1}}'></input>
-      <button class="tui-number-cell" bindtap="prevNum1" disabled='{{disabled2}}'>+</button>
+      <view class="tui-number-cell" bindtap="prevNum1" disabled='{{disabled2}}'>+</view>
     </view>
   </view>
+</view>
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0 150px;">
+  <include src="../../template/pagead.wxml"/>
 </view>

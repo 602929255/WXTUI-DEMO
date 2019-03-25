@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/radio/radio.wxml-->
 <view class="tui-content">
   <radio-group class="radio-group" bindchange="radioChange">
@@ -7,5 +10,9 @@
   </radio-group>
   <view class="tui-show-name">
     {{radioStr}}
+  </view>
+  <!-- 子页面广告位 -->
+  <view style="margin:4vw 0 150px;">
+    <include src="../../template/pagead.wxml"/>
   </view>
 </view>

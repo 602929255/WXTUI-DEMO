@@ -1,0 +1,8 @@
+/* pages/module/marginright/marginright.wxss */
+.rui-banner-img{
+  width: 100vw;
+  height: 42.6667vw;
+  border: 1px solid #2ed39e;
+  box-sizing: border-box;
+  opacity: 0.3;
+}

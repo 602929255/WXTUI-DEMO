@@ -1,1 +1,9 @@
-<canvas style="background: url('../../src/images/juan.png') no-repeat center center" canvas-id="luck" class="tui-luck" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd"></canvas>
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
+<canvas style="background: url('https://rattenking.gitee.io/stone/images/wx/images/juan.png') no-repeat center center" canvas-id="luck" class="tui-luck" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd"></canvas>
+
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0 150px;">
+  <include src="../../template/pagead.wxml"/>
+</view>

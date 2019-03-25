@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/actionsheet/actionsheet.wxml-->
 <view class="tui-content">
   <view class="tui-show-name">
@@ -8,3 +11,8 @@
   <text class="tui-card-btn tui-fl" bindtap="openActionsheetDe">DELETE</text>
   <text class="tui-card-btn tui-fr" bindtap="openActionsheetSh">SHARE</text>
 </view>
+
+<!-- 子页面广告位 -->
+<!-- <view style="margin:4vw 0 150px;">
+  <include src="../../template/pagead.wxml"/>
+</view> -->

@@ -1,64 +1,63 @@
-.tui-fixed-x{
-  margin-left: 130px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-.tui-fixed-left{
-  width: 120px;
-  height: 100%;
-  border-right: 1px solid #dfdfdf;
-  position: fixed;
-  background-color: #f5f5f5;
-  top: 0;
-  left: 0;
-}
-.tui-list-head{
-  background-color: #fff;
-  margin-bottom: 15px;
+.rui-flex-content{
+  display: -webkit-flex;
+  display: flex;
 }
 .tui-city-scroll{
-  width: 100%;
-}
-.tui-nav-li{
-  font-size: 30rpx;
-  padding: 0 10px;
-  height: 100rpx;
-  line-height: 100rpx;
-  width: 100px;
-  display: block;
-  border-bottom: 1px solid #dfdfdf;
-  position: relative;
-  z-index: 10;
-}
-.tui-nav-active{
-  background-color: #fff;
-}
-
-.tui-fixed-y{
-  margin-left: 120px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 100%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
+  flex: 0 0 auto;
+  height: 100vh;
+  width: 30vw;
 }
 .tui-city-scroll-y{
-  height: 100%;
+  flex: 0 0 auto;
+  height: 100vh;
+  width: 70vw;
+}
+
+.tui-nav-li{
+  font-size: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  display: block;
+  border-left:5px solid #fff;
   box-sizing: border-box;
 }
+.tui-nav-active{
+  border-left:5px solid #2ed39e;
+  color: #2ed39e;
+}
+
+
 .tui-list-head{
   height: 50px;
   line-height: 50px;
   text-align: center;
   font-size: 30rpx;
-  color: blue;
+  background-color: #2ed39e;
+  color: #fff;
+  border: none;
 }
 .tui-list-li{
-  height: 400px;
-  padding: 10rpx;
-  color: #fff;
-  font-size: 50rpx;
-  background-color: lightgreen;
+  padding:3vw 2vw 0;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.rui-goods-li{
+  flex: 0 0 auto;
+  width: 32%;
+  height: 30vw;
+  box-sizing: border-box;
+  border: 1px solid #2ed39e;
+  font-size: 4vw;
+  color: #2ed39e;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  margin-bottom: 2vw;
 }

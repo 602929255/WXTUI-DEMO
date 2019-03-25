@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/grid/grid.wxml-->
 <view class="section">
   <view class="tui-table-view">
@@ -38,4 +41,8 @@
       <view>more</view>
     </view>
   </view>
+</view>
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0 150px;">
+  <include src="../../template/pagead.wxml"/>
 </view>

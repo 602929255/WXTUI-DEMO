@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/picker/picker.wxml-->
 <view class="tui-picker-content">
   <view class="tui-picker-name">一级选择实例</view>
@@ -11,6 +14,10 @@
   <picker bindchange="changeRegin" mode = "region" value="{{region}}">
     <view class="tui-picker-detail">{{region[0]}} - {{region[1]}} - {{region[2]}}</view>
   </picker>
+</view>
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0;">
+  <include src="../../template/pagead.wxml"/>
 </view>
 
 <view class="tui-picker-content">

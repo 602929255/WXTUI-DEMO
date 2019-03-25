@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "rui-sticky": "../../../component/sticky/sticky",
+    "rui-swiper": "../../../component/swiper/swiper",
+    "rui-flex": "../../../component/flex/flex"
+  }
+}

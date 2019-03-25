@@ -1,3 +1,6 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--pages/tabbar/tabbar.wxml-->
 <import src="../../template/list.wxml"/>
 
@@ -9,11 +12,15 @@
   </view>
 </view>
 <view class="tui-list-box {{index == 0 ? '' : 'tui-hide'}}">
-  <template wx:for="{{['选项卡一子选项 - 1','选项卡一子选项 -  2','选项卡一子选项 - 3','选项卡一子选项 - 4','选项卡一子选项 - 5','选项卡一子选项 - 6','选项卡一子选项 - 7','选项卡一子选项 - 8']}}" is="listNoneOnly" data="{{item}}"></template>
+  <template wx:for="{{['选项卡一子选项 - 1','选项卡一子选项 -  2','选项卡一子选项 - 3','选项卡一子选项 - 4','选项卡一子选项 - 5','选项卡一子选项 - 6','选项卡一子选项 - 7','选项卡一子选项 - 8']}}" wx:key="a1" is="listNoneOnly" data="{{item}}"></template>
 </view>
 <view class="tui-list-box {{index == 1 ? '' : 'tui-hide'}}">
-  <template wx:for="{{['选项卡二子选项 - 1','选项卡二子选项 -  2','选项卡二子选项 - 3','选项卡二子选项 - 4','选项卡二子选项 - 5']}}" is="listNoneOnly" data="{{item}}"></template>
+  <template wx:for="{{['选项卡二子选项 - 1','选项卡二子选项 -  2','选项卡二子选项 - 3','选项卡二子选项 - 4','选项卡二子选项 - 5']}}" is="listNoneOnly" data="{{item}}" wx:key="a2"></template>
 </view>
 <view class="tui-list-box {{index == 2 ? '' : 'tui-hide'}}">
-  <template wx:for="{{['选项卡三子选项 - 1','选项卡三子选项 -  2','选项卡三子选项 - 3']}}" is="listNoneOnly" data="{{item}}"></template>
+  <template wx:for="{{['选项卡三子选项 - 1','选项卡三子选项 -  2','选项卡三子选项 - 3']}}" is="listNoneOnly" data="{{item}}" wx:key="a3"></template>
+</view>
+<!-- 子页面广告位 -->
+<view style="margin:4vw 0 150px;">
+  <include src="../../template/pagead.wxml"/>
 </view>

@@ -1,15 +1,24 @@
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
+
 <!--tuis/offcanvas/offcanvas.wxml-->
 <view class="tui">
     <view class="tui-bottom">
         <view class="tui-content">
-            <view bindtap="chooseItem" data-text="{{item}}" wx:for-items="{{nav_list}}" class="tui-list">
+            <view bindtap="chooseItem" data-text="{{item}}" wx:for-items="{{nav_list}}" wx:key="navList1" class="tui-list">
                 <text>{{item}}</text>
             </view>
         </view>
     </view>
     <view class="tui-top {{isOpen ? 'tui-state' : ''}}">
       <view class="tui-mask {{isOpen ? '' : 'tui-hide'}}" bindtap="changeCanvas"></view>
-      <image class="left-nav" bindtap="changeCanvas" src="../../src/images/btn.png"></image>
+      <view style="padding:10vw 4vw;">
+        <button type="primary" bindtap="changeCanvas">打开右侧菜单</button>
+      </view>
       <view class="tui-offcanvas">{{chooseList}}</view>
+      <!-- 子页面广告位 -->
+      <view style="margin:4vw 0 150px;">
+        <include src="../../template/pagead.wxml"/>
+      </view>
     </view>
 </view>

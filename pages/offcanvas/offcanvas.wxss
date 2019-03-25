@@ -23,7 +23,7 @@ page,.tui {
   left:0;
   width: 750rpx;
   height: 100%;
-  background-color: rgb(57, 125, 230);
+  background-color: #fff;
   z-index: 0;
   transition: All 0.4s ease; 
   -webkit-transition: All 0.4s ease;
@@ -55,6 +55,6 @@ page,.tui {
 }
 
 .tui-offcanvas{
-  padding: 80rpx 10px 0;
-  color: #fff;
+  color: #2ed39e;
+  padding: 0 4vw;
 }

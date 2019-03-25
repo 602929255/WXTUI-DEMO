@@ -1,0 +1,7 @@
+/* pages/module/picker/picker.wxss */
+.rui-flex{
+  font-size: 4vw;
+  padding: 0 3vw;
+  margin: 1vw 0;
+}
+/* rui-picker{flex-grow: 1;} */

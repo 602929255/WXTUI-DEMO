@@ -1,0 +1,13 @@
+<view class='rui-index-list-content'>
+  <scroll-view class="rui-navbar-content" style='order:{{position === "left" ? "0" : "1"}}'>
+    <view class='rui-navbar-item' data-code="{{item.code}}" bindtap='getClickValue' wx:for="{{list}}" wx:key="navbar">{{item.code}}</view>
+  </scroll-view>
+  <scroll-view class="rui-list-content" scroll-y="true" scroll-into-view="{{code}}" scroll-with-animation="true">
+    <block wx:for="{{list}}" wx:key="list">
+      <view class='rui-panel-content' id="{{item.code}}">{{item.code}}</view>
+      <view class='rui-list-li' wx:for="{{item.cityList}}" wx:key="listNext" wx:for-item="list">
+        {{list}}
+      </view>
+    </block>
+  </scroll-view>
+</view>

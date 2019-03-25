@@ -1,0 +1,3 @@
+<scroll-view class="rui-sticky-content rui-class" bindscroll="getScrollTop" scroll-y="true" scroll-top="{{scroll}}">
+  <slot name="stickychild"></slot>
+</scroll-view>

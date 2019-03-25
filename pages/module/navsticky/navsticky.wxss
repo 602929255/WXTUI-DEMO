@@ -1,0 +1,59 @@
+/* pages/module/navsticky/navsticky.wxss */
+.rui-banner-img{
+  width: 100vw;
+  height: 42.6667vw;
+  border: 1px solid #2ed39e;
+  box-sizing: border-box;
+  opacity: 0.3;
+}
+.rui-nav-flex{
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.rui-goods-content{padding-top: 4vw;}
+.rui-nav-li text{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid #fff;
+}
+.rui-nav-li{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 25vw;
+  height: 50px;
+  font-size: 16px;
+}
+.rui-nav-li.rui-active text{
+  color: #2ed39e;
+  border-bottom: 4px solid #2ed39e;
+}
+.rui-flex-li{
+  flex: 0 0 auto;
+  width: 44vw;
+  margin: 0 0 4vw 4vw;
+}
+.rui-flex-li image{
+  width: 44vw;
+  height: 27vw;
+  display: block;
+}
+.rui-flex-li view{
+  height: 13vw;
+  line-height: 13vw;
+  background-color: #2ed39e;
+  color: #fff;
+  font-size: 4vw;
+  padding: 0 4vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical; 
+  -webkit-line-clamp:1;
+}

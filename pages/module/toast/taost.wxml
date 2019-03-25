@@ -1,0 +1,9 @@
+<!--pages/module/toast/taost.wxml-->
+<button bindtap='toast'>基础TOAST</button>
+
+
+<rui-toast id="toast">
+  <view slot="toastchild" class='rui-module'>
+    <view style="width:100px;height:200px;background:#fff;"></view>
+  </view>
+</rui-toast>
