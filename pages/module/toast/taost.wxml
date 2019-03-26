@@ -1,9 +1,75 @@
 <!--pages/module/toast/taost.wxml-->
-<button bindtap='toast'>基础TOAST</button>
+
+<rui-panel title="默认提示 default"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast12'>默认提示</button>
+
+<rui-panel title="索引提示 circle"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast13'>索引提示</button>
+
+<rui-panel title="成功提示 success"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast14'>成功提示</button>
+
+<rui-panel title="失败提示 error"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast15'>失败提示</button>
+
+<rui-panel title="警告提示 warning"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast16'>警告提示</button>
+
+<rui-panel title="加载提示 loading"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast17'>加载提示</button>
+
+<rui-panel title="自定义图片提示 selfimg"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast18'>自定义图片提示</button>
+
+<rui-panel title="基础使用方式 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast1'>默认模态弹框</button>
+
+<rui-panel title="去掉取消按钮 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast2'>单按钮模态弹框</button>
+
+<rui-panel title="去掉标题行 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast3'>无标题模态弹框</button>
+
+<rui-panel title="模态框文本10行显示 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast4'>多行文本模态弹框</button>
+
+<rui-panel title="修改确认按钮颜色 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast5'>修改确认按钮颜色模态弹框</button>
+
+<rui-panel title="修改按钮文本 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast6'>修改按钮文本模态弹框</button>
+
+<rui-panel title="文本对齐方式 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast7'>文本对齐方式模态弹框</button>
+
+<rui-panel title="启动遮罩层点击关闭事件 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast8'>遮罩层事件模态弹框</button>
+
+<rui-panel title="启动关闭弹窗按钮 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast9'>启动关闭弹窗按钮模态弹框</button>
+
+<rui-panel title="自定义文本位置内容 mask"></rui-panel>
+<button class='rui-toast-btn' bindtap='toast10' data-self="selftext">自定义文本位置内容模态弹框</button>
+
+<rui-panel title="弹框完全自定义 mask"></rui-panel>
+<button class='rui-toast-btn' style='margin-bottom:50px;' bindtap='toast11' data-self="selfcontent">弹框完全自定义模态弹框</button>
 
 
-<rui-toast id="toast">
-  <view slot="toastchild" class='rui-module'>
-    <view style="width:100px;height:200px;background:#fff;"></view>
+
+
+<rui-toast id="toast" bindcanceltoast="canceltoast" bindconfirmtoast="confirmtoast">
+  <view slot="maskchild" wx:if="{{selftext === 'selftext'}}">
+    <view class='rui-flex'>
+      <text>手机号码：</text>
+      <input bindinput='getInput' placeholder='输入手机号码' name="phone"></input>
+    </view>
+    <view class='rui-flex'>
+      <text>验证码：</text>
+      <input bindinput='getInput' placeholder='输入验证码' name="phone"></input>
+    </view>
+  </view>
+  <view slot="toastchild" wx:if="{{selftext === 'selfcontent'}}">
+    <image src="../../../src/images/4.jpg" style="width:80vw;height:110vw;"></image>
   </view>
 </rui-toast>
+

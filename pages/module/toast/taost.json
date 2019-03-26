@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "rui-toast": "../../../component/toast/toast"
+    "rui-toast": "../../../component/toast/toast",
+    "rui-panel": "../../../component/panel/panel"
   }
 }

@@ -1,6 +1,30 @@
 <!--component/toast/toast.wxml-->
-<view class='rui-toast {{type === "default" ? "" : "rui-toast-circle"}}' wx:if="{{ visible && mask && type !== 'innerhtml'}}" bindtap="handleHide">{{content}}</view>
+<!-- 默认提示框 -->
+<view class='rui-toast' wx:if="{{ visible && mask && type === 'default'}}"><text>{{content}}</text></view>
 
-<view class='rui-toast-innerhtml' wx:if="{{type === 'innerhtml'}}">
-  <slot name="toastchild"></slot>
+<!-- 索引提示框 -->
+<view class='rui-toast rui-toast-circle' wx:if="{{ visible && mask && type === 'circle'}}"><text>{{content}}</text></view>
+
+<!-- 自定义图片提示 -->
+<view class='rui-toast-img' wx:if="{{ visible && mask && (type === 'success' || type === 'warning' || type === 'error' || type === 'loading' || type === 'selfimg')}}">
+  <image wx:if="{{type === 'selfimg'}}" src="{{imgUrl}}"></image>
+  <image wx:else src="{{icon[type]}}" class='{{type !== "success" ? (type === "loading" ? "rui-img rui-loading" : "rui-img") : ""}}'></image>
+  <text>{{content}}</text>
+</view>
+
+<!-- MASK模态框 -->
+<view class='rui-mask-content' wx:if="{{visible && mask  && type === 'mask'}}" catchtap='clickMask'>
+  <view class='rui-mask-child' catchtap="catchMask">
+    <image src="{{closeImg}}" wx:if="{{closeShow}}" class='rui-mask-close' style="{{closeStyle}}" catchtap='handleHide'></image>
+    <slot name="toastchild" wx:if="{{!native}}"></slot>
+    <view class='rui-mask-layer' wx:if="{{native}}">
+      <view class='rui-mask-head' wx:if="{{title !== ''}}">{{title}}</view>
+      <view class='rui-mask-layer-content' wx:if="{{content !== ''}}" style="-webkit-line-clamp:{{lineClamp > 10 ? 10 : lineClamp}};text-align:{{textAlign}};">{{content}}</view>
+      <slot name="maskchild"></slot>
+      <view class='rui-mask-flex'>
+        <button class='rui-mask-cancel' wx:if="{{cancelShow}}" catchtap='cancel'>{{cancelText}}</button>
+        <button class='rui-mask-confirm' style="color:{{confirmColor}}" catchtap='confirm'>{{confirmText}}</button>
+      </view>
+    </view>
+  </view>
 </view>

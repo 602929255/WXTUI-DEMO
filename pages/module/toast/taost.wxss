@@ -8,3 +8,29 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.rui-flex{
+  display: -webkit-flex;
+  display: flex;
+  font-size: 4vw;
+  align-items: center;
+  height: 12vw;
+  margin: 0 3vw;
+}
+.rui-flex:not(:last-child){
+  border-bottom: 1px solid #eee;
+}
+.rui-flex text{
+  flex: 0 0 auto;
+  width: 20vw;
+  text-align: right;
+}
+.rui-flex input{
+  flex-grow: 1;
+  font-size: 4vw;
+}
+.rui-toast-btn{
+  background-color: #2ed39e;
+  color: #fff;
+  margin: 0 3vw;
+  font-size: 4vw;
+}

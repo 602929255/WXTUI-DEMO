@@ -19,5 +19,9 @@ class RuiToast{
   hideToast(selector = '#toast'){
     const ctx = this.getCtx(selector);
   }
+  hideToastModal(page,selector = "#toast"){
+    const ctx = page.selectComponent(selector);
+    ctx.handleHide();
+  }
 }
 module.exports = new RuiToast();
