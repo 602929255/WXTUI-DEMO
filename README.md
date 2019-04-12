@@ -1,3 +1,9 @@
+1、帮助协调
+2、仓储、共享站
+3、学会提问题
+
+
+
 ## 博客
 1. 码云博客：[Rattenking 博客](http://rattenking.gitee.io/stone/index.html)
 2. CSDN博客：[Rattenking的博客](https://blog.csdn.net/m0_38082783)

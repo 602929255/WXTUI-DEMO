@@ -1,5 +1,7 @@
 // pages/number/number.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 数字输入框 】', path: '/pages/number/number' })),
   data: {
     number: 1,
     number1: 5,

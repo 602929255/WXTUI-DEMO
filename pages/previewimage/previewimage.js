@@ -1,5 +1,7 @@
 // pages/previewimage/previewimage.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 图片预览 】', path: '/pages/previewimage/previewimage' })),
   data: {
     previewImageArr:[]
   },

@@ -114,7 +114,7 @@ var homeMenu = [
     code: 'N',
     list: [
       {
-        'title': 'nav bar（导航栏）',
+        'title': 'navbar（导航栏）',
         'url': '../../pages/navbar/navbar'
       }, {
         'title': 'number box（数字输入框）',
@@ -185,7 +185,7 @@ var homeMenu = [
     code: 'T',
     list: [
       {
-        'title': 'tab bar（选项卡）',
+        'title': 'tabbar（选项卡）',
         'url': '../../pages/tabbar/tabbar'
       } 
     ]

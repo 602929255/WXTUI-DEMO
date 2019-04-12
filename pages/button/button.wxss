@@ -3,8 +3,7 @@
   padding: 10px;
 }
 .tui-btn-content{
-  height: 60px;
-  line-height: 60px;
+  padding: 10px;
 }
 /** 修改button默认的点击态样式类**/
 .button-hover {

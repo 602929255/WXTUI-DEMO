@@ -15,6 +15,9 @@
 <rui-panel title="警告提示 warning"></rui-panel>
 <button class='rui-toast-btn' bindtap='toast16'>警告提示</button>
 
+<include src="../../../template/comad.wxml"/>
+<include src="../../../template/comgohome.wxml"/>
+
 <rui-panel title="加载提示 loading"></rui-panel>
 <button class='rui-toast-btn' bindtap='toast17'>加载提示</button>
 

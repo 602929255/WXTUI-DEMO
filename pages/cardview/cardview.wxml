@@ -20,7 +20,7 @@
   </view>
 </view>
 <!-- 子页面广告位 -->
-<view style="margin:10px;">
+<view>
   <include src="../../template/pagead.wxml"/>
 </view>
 

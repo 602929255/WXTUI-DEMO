@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/module/toast/taost",
     "pages/module/picker/picker",
-    "pages/index/index",
     "pages/module/navsticky/navsticky",
     "pages/module/comswiper/comswiper",
     "pages/countDown/countDown",

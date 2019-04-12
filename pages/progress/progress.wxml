@@ -2,7 +2,7 @@
 <template is="HOME"></template>
 
 <!--pages/progress/progress.wxml-->
-<view class="tui-content">
+<view>
   <view class="tui-menu-list">
     <text>show-info在进度条右侧显示百分比</text>
     <progress percent="50" show-info />
@@ -14,6 +14,10 @@
   <view class="tui-menu-list">
     <text>color进度条颜色</text>
     <progress percent="50" color="red" show-info/>
+  </view>
+  <!-- 子页面广告位 -->
+  <view>
+    <include src="../../template/pagead.wxml"/>
   </view>
   <view class="tui-menu-list">
     <text>active进度条从左往右的动画</text>
@@ -35,9 +39,5 @@
       <text data-id="70" bindtap="changeTabbar" class="tui-tabbar-cell {{index == 70 ? 'tui-active' : ''}}">70%</text>
       <text data-id="90" bindtap="changeTabbar" class="tui-tabbar-cell {{index == 90 ? 'tui-active' : ''}}">90%</text>
     </view>
-  </view>
-  <!-- 子页面广告位 -->
-  <view style="margin:4vw 0 150px;">
-    <include src="../../template/pagead.wxml"/>
   </view>
 </view>

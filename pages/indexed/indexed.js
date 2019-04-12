@@ -1,7 +1,9 @@
 // pages/indexed/indexed.js
 var city_list = require('./city.js');
 
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 索引列表 】', path: '/pages/indexed/indexed' })),
   data: {
     cityList: city_list.city,
     chooseCity: '您还未选择机场！',

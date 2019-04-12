@@ -1,5 +1,7 @@
 // pages/checkbox/checkbox.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 复选框 】', path: '/pages/checkbox/checkbox' })),
   data: {
     items: [
       { name: 'USA', value: '美国' },

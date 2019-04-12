@@ -1,6 +1,8 @@
 // pages/map/map.js
 var amapFile = require('../../src/js/amap-wx.js');
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 地图 】', path: '/pages/map/map' })),
   data: {
     key: 'c290b7e016c85e8f279b2f80018c6fbf',
     show: false,

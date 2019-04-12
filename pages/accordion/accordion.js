@@ -1,7 +1,8 @@
 // pages/accordion/accordion.js
 var banner = require("../../src/js/banner.js");
-
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 折叠面板 】', path: '/pages/accordion/accordion'})),
   data: {
     isShowFrom1: false,
     isShowFrom2: false,

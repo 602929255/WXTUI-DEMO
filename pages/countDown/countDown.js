@@ -12,7 +12,9 @@ let goodsList = [
   {actEndTime: '2018/04/19 07:00:48'},
   {actEndTime: '2018/04/28 03:00:11'}
 ]
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 批量倒计时 】', path: '/pages/countDown/countDown' })),
   data: {
     countDownList: [],
     actEndTimeList: []

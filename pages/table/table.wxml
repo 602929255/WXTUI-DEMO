@@ -8,6 +8,10 @@
 <view class="icon-group">
   <icon wx:for="{{typeList}}" type="{{item}}"  wx:key="navList1" size="40"></icon>
 </view>
+<!-- 子页面广告位 -->
+<view>
+  <include src="../../template/pagead.wxml"/>
+</view>
 <view class="icon-group">微信小程序外部库引入图标</view>
 <view class="icon-group">
   <icon class="iconfont icon-zhiding"></icon>
@@ -32,8 +36,4 @@
   <icon class="iconfont icon-shezhi"></icon>
   <icon class="iconfont icon-shanchu"></icon>
   <icon class="iconfont icon-dianhua"></icon>
-</view>
-<!-- 子页面广告位 -->
-<view style="margin:4vw 0 150px;">
-  <include src="../../template/pagead.wxml"/>
 </view>

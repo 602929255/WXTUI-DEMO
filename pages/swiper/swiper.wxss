@@ -1,1 +1,5 @@
 /* pages/swiper/swiper.wxss */
+.tui-img,.tui-swiper{
+  width: 100vw;
+  height: 40vw;
+}

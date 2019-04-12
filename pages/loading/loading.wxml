@@ -39,6 +39,10 @@
     </view>
   </view>
 </view>
+<!-- 子页面广告位 -->
+<view>
+  <include src="../../template/pagead.wxml"/>
+</view>
 <view class="tui-loading-row">
   <view class="tui-loading-cell">
     <view class="circle-round-fade">
@@ -104,7 +108,4 @@
     </view>
   </view>
 </view>
-<!-- 子页面广告位 -->
-<view style="margin:4vw 0 150px;">
-  <include src="../../template/pagead.wxml"/>
-</view>
+

@@ -14,15 +14,15 @@
     </view>
     <!-- 组件列表 -->
     <view wx:for="{{current == 0 ? menu : extendMenu}}" wx:key="menu" wx:for-item="list">
+      <view wx:if="{{index === 2}}">
+        <!-- 广告位 -->
+        <include src="../../template/homead.wxml"/>
+      </view>
       <view class='rui-list-section'>
         <view class='rui-list-head'>{{list.code}}</view>
         <template wx:for="{{list.list}}" wx:key="list" is="list" data="{{item}}"></template>
       </view>
     </view>
-  </view>
-  <!-- 广告位 -->
-  <view style='padding-bottom:150px;background:#eee;'>
-    <include src="../../template/homead.wxml"/>
   </view>
 </scroll-view>
 

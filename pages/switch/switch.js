@@ -1,5 +1,8 @@
 // pages/switch/switch.js
+const uilt = require('../../utils/util.js');
+
 var pageObj = {
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 开关 】', path: '/pages/switch/switch' })),
   data: {
     isChecked1: false,
     isChecked2: true,

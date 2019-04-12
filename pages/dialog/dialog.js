@@ -1,5 +1,7 @@
 // pages/dialog/dialog.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 消息框 】', path: '/pages/dialog/dialog' })),
   data: {
     msg: ''
   },

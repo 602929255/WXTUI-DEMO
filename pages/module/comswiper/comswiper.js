@@ -1,13 +1,9 @@
 // pages/comswiper/comswiper.js
 var banner = require("../../../src/js/banner.js");
+const uilt = require('../../../utils/util.js');
+
 Page({
-  onShareAppMessage(opts) {
-    return {
-      title: 'WX-RUI小程序示例',
-      path: '/pages/index/index',
-      imageUrl: '../../../src/images/shareLogo.jpg'
-    }
-  },
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例之【 前后边距滑动轮播 】', path: '/pages/module/comswiper/comswiper' })),
   data: {
     current: 0,
     bannerList: banner.bannerList

@@ -1,6 +1,8 @@
 // pages/swiper/swiper.js
 var banner = require("../../src/js/banner.js");
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 图片轮播 】', path: '/pages/swiper/swiper' })),
   data: {
     indicatorDots: true,
     vertical: false,

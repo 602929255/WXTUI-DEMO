@@ -1,5 +1,7 @@
 // pages/radio/radio.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 单选框 】', path: '/pages/radio/radio' })),
   data: {
     items: [
       { name: 'USA', value: '美国' },

@@ -1,5 +1,7 @@
 // pages/gallerylist/gallerylist.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 图文列表 】', path: '/pages/gallerylist/gallerylist' })),
   data: {
     galleryList:[
       {

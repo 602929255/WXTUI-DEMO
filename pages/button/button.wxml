@@ -1,13 +1,17 @@
-<!-- <import src="../../template/goHome.wxml"/>
-<template is="HOME"></template> -->
+<import src="../../template/goHome.wxml"/>
+<template is="HOME"></template>
 
 <!--pages/button/button.wxml-->
-<view class="tui-btn-group">
+<view>
   <view class="tui-btn-content">
     <button size="{{defaultSize}}" bindtap="default" hover-class="other-button-hover"> default </button>
   </view>
   <view class="tui-btn-content">
     <button type="primary" size="{{primarySize}}" bindtap="primary"> primary </button>
+  </view>
+  <!-- 子页面广告位 -->
+  <view>
+    <include src="../../template/pagead.wxml"/>
   </view>
   <view class="tui-btn-content">
     <button type="warn" size="{{warnSize}}" bindtap="warn"> warn </button>
@@ -21,8 +25,4 @@
   <view class="tui-btn-content">
     <button bindtap="setLoading" loading="{{loading}}" type="warn">点击设置按钮loading属性</button>
   </view>
-</view>
-<!-- 子页面广告位 -->
-<view style="margin:4vw 0 150px;">
-  <include src="../../template/pagead.wxml"/>
 </view>

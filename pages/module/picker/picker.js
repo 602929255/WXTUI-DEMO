@@ -1,5 +1,7 @@
 // pages/module/picker/picker.js
+const uilt = require('../../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例之【 时间选择器(时间粒度精确到分秒) 】', path: '/pages/module/picker/picker' })),
   data: {
     yearvalue: '2019',
     monthvalue: '2019-03',
@@ -9,13 +11,6 @@ Page({
     secondvalue: '2019-03-19 15:47:25',
     value: '2019-03-15 10:45:45',
     value1: '2022-08-15 10:45:23',
-  },
-  onShareAppMessage(opts) {
-    return {
-      title: 'WX-RUI小程序示例',
-      path: '/pages/index/index',
-      imageUrl: '../../../src/images/shareLogo.jpg'
-    }
   },
   changeYear(e){
     console.log(e.detail.value)

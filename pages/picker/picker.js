@@ -1,5 +1,7 @@
 // pages/picker/picker.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 picker 选择器 】', path: '/pages/picker/picker' })),
   data: {
     // 普通选择器列表设置,及初始化
     countryList: ['中国','美国','英国','日本','韩国','巴西','德国'],

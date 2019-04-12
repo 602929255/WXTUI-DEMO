@@ -1,14 +1,14 @@
 // pages/module/toast/taost.js
 const RuiToast = require('../../../component/toast/RuiToast.js');
+const uilt = require('../../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例之【 Modal 自定义模态框】', path: '/pages/module/toast/taost' })),
   onLoad(){
-    
   },
   getInput(e){
     console.log(e.detail.value)
   },
   confirmtoast(e){
-    console.log(e.detail.value)
     RuiToast.hideToastModal(this);
   },
   canceltoast(e){

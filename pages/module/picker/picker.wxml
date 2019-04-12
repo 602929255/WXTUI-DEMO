@@ -14,6 +14,9 @@
   <rui-picker slot="flexchild" start="2000-01-01 00:00:00" end="2050-12-31 23:59:59" value="{{secondvalue}}" fields="second" bindchangedatepicker="changeSecond"></rui-picker>
 </rui-flex>
 
+<!-- 广告 -->
+<include src="../../../template/comad.wxml"/>
+
 <rui-panel title="时间粒度为：minute"></rui-panel>
 <rui-flex rui-class="rui-flex">
   <text slot="flexchild">选择时间：</text>
@@ -44,9 +47,6 @@
   <rui-picker slot="flexchild" start="2000-01-01 00" end="2050-12-31 23" value="{{hourvalue}}" fields="hour" bindchangedatepicker="changeHour"></rui-picker>
 </rui-flex>
 
-<view style="margin:4vw 0 150px;">
-  <include src="../../../template/comad.wxml"/>
-</view>
 
 <!-- <include src="../../../template/comgohome.wxml"/> -->
 

@@ -1,7 +1,8 @@
 // pages/dtpicker/dtpicker.js
 var dateTimePicker = require('../../utils/dateTimePicker.js');
-
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 日期时间 】', path: '/pages/dtpicker/dtpicker' })),
   data: {
     date: '2018-10-01',
     time: '12:00',

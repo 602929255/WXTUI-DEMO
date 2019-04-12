@@ -18,6 +18,7 @@
         indicatorActiveColor="#2ed39e"
       ></rui-swiper>
     </view>
+    
     <!-- 导航栏组件 -->
     <rui-flex rui-class="rui-nav-flex">
       <view bindtap='getNavIndex' data-index="{{index}}" class='rui-nav-li {{navcur == index ? "rui-active" : ""}}' slot="flexchild" wx:for="{{navlist}}" wx:key="navlist">
@@ -25,6 +26,10 @@
       </view>
     </rui-flex>
     <rui-flex wx:for="{{list}}" rui-class="{{index == 0 ? 'rui-goods-content' : ''}}" wx:key="list">
+      <view wx:if="{{index == 1}}" slot="flexchild">
+        <!-- 广告 -->
+        <include src="../../../template/comad.wxml"/>
+      </view>
       <view class='rui-flex-li {{listIndex == 0 ? "rui-goods-nodes" : ""}}' slot="flexchild" wx:for="{{item.list}}" wx:for-item="listItme" wx:for-index="listIndex" wx:key="listchild">
         <image src="{{listItme.imgUrl}}"></image>
         <view>{{listItme.title}}</view>

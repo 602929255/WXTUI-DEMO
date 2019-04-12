@@ -1,6 +1,9 @@
 // pages/button/button.js
 var types = ['default', 'primary', 'warn']
+const uilt = require('../../utils/util.js');
+  
 var pageObject = {
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 按钮 】', path: '/pages/button/button' })),
   data: {
     defaultSize: 'default',
     primarySize: 'default',

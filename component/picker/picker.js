@@ -116,6 +116,7 @@ Component({
         curarr.push(times[i][values[i]])
       }
       let str = GetDate.format(curarr);
+      this.setData({ value: str});
       this.triggerEvent('changedatepicker', { value: str }, {});
     },
     columnchangeDate(e){

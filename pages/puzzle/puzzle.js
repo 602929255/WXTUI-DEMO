@@ -1,5 +1,7 @@
 const Puzzle = require("./h5puzzle.js");
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 拼图游戏 】', path: '/pages/puzzle/puzzle' })),
   data: {
     imgPoints: [],
     imgArr: [

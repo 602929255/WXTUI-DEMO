@@ -2,7 +2,7 @@
 <template is="HOME"></template>
 
 <!--pages/dialog/dialog.wxml-->
-<view class="tui-content">
+<view>
   <view class="tui-show-name">
     <text class="tui-card-btn" bindtap="warnModal">警告消息框</text>
   </view>
@@ -21,11 +21,11 @@
   <view class="tui-show-name">
     <text class="tui-card-btn" bindtap="showToastLoading">正在加载--自动消失提示框</text>
   </view>
+  <!-- 子页面广告位 -->
+  <view>
+    <include src="../../template/pagead.wxml"/>
+  </view>
   <view class="tui-show-name">
     <text>{{msg}}</text>
-  </view>
-  <!-- 子页面广告位 -->
-  <view style="margin:4vw 0 150px;">
-    <include src="../../template/pagead.wxml"/>
   </view>
 </view>

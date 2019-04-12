@@ -1,15 +1,10 @@
 // pages/index/index.js
 var menu = require("../../src/js/menu.js");
 var extendMenu = require("../../src/js/extendMenu.js");
+const uilt = require('../../utils/util.js');
 
 Page({
-  onShareAppMessage(opts){
-    return {
-      title: 'WX-RUI小程序示例',
-      path: '/pages/index/index',
-      imageUrl: '../../src/images/shareLogo.jpg'
-    }
-  },
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例', path: '/pages/index/index', imageUrl: 'https://img-blog.csdnimg.cn/20190325113115701.jpeg' })),
   data: {
     menu: menu.homeMenu,
     extendMenu: extendMenu,

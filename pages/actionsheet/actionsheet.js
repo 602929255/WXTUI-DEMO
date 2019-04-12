@@ -1,5 +1,7 @@
 // pages/actionsheet/actionsheet.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 操作表 】', path: '/pages/actionsheet/actionsheet' })),
   data: {
   
   },

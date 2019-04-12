@@ -2,17 +2,18 @@
 <template is="HOME"></template>
 
 <!--pages/radio/radio.wxml-->
-<view class="tui-content">
+<view>
   <radio-group class="radio-group" bindchange="radioChange">
     <label class="radio" wx:for="{{items}}" wx:key="radio">
       <view class="tui-menu-list"><radio color="#007aff" value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}</view>
     </label>
   </radio-group>
+  <!-- 子页面广告位 -->
+  <view>
+    <include src="../../template/pagead.wxml"/>
+  </view>
   <view class="tui-show-name">
     {{radioStr}}
   </view>
-  <!-- 子页面广告位 -->
-  <view style="margin:4vw 0 150px;">
-    <include src="../../template/pagead.wxml"/>
-  </view>
+  
 </view>

@@ -1,5 +1,7 @@
 // pages/slider/slider.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 滑块 】', path: '/pages/slider/slider' })),
   data: {
     slider1: 50,
     slider2: 50,

@@ -1,5 +1,7 @@
 // pages/grid/grid.js
+const uilt = require('../../utils/util.js');
 Page({
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例【 九宫格 】', path: '/pages/grid/grid' })),
 
   /**
    * 页面的初始数据

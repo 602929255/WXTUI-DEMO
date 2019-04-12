@@ -1,13 +1,8 @@
 const list = require('./list.js');
 var banner = require("../../../src/js/banner.js");
+const uilt = require('../../../utils/util.js');
 Page({
-  onShareAppMessage(opts) {
-    return {
-      title: 'WX-RUI小程序示例',
-      path: '/pages/index/index',
-      imageUrl: '../../../src/images/shareLogo.jpg'
-    }
-  },
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例之【 商品列表header切换吸顶 】', path: '/pages/module/sticky/sticky' })),
   data: {
     list: list,
     bannerList: banner.bannerList

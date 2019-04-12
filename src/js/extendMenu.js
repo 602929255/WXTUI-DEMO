@@ -1,5 +1,14 @@
 let extendMenu = [
   {
+    code: 'Modal (模态框)',
+    list: [
+      {
+        'title': 'Modal 自定义模态框',
+        'url': '../../pages/module/toast/taost'
+      }
+    ]
+  },
+  {
     code: 'Sticky (吸顶)',
     list: [
       {
@@ -54,5 +63,6 @@ let extendMenu = [
       },
     ]
   }
+  
 ]
 module.exports = extendMenu;

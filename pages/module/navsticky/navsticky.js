@@ -1,14 +1,9 @@
 const list = require('../sticky/list.js');
 const banner = require("../../../src/js/banner.js");
 const BaseMathod = require('../../../src/js/BaseMathod.js');
+const uilt = require('../../../utils/util.js');
 Page({
-  onShareAppMessage(opts) {
-    return {
-      title: 'WX-RUI小程序示例',
-      path: '/pages/index/index',
-      imageUrl: '../../../src/images/shareLogo.jpg'
-    }
-  },
+  ...(uilt.getShareInfo({ title: 'WX-RUI小程序示例之【 导航吸顶 】', path: '/pages/module/navsticky/navsticky' })),
   data: {
     list: list,
     bannerList: banner.bannerList,
